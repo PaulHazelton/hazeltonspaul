@@ -3,14 +3,29 @@
 	margin: 0;
 	padding: 0;
 }
+
 :root {
 	--bgcolor: #111;
 	--fgcolor: #fff;
 	--cyan: #0ff;
 }
-body {
-	font-size: 16px;
+@media (min-width: 800px) {
+	:root {
+		font-size: 20px;
+	}
+}
+@media (max-width: 800px) {
+	:root {
+		font-size: 16px;
+	}
+}
+@media (max-width: 600px) {
+	:root {
+		font-size: 12px;
+	}
+}
 
+body {
 	color: var(--fgcolor);
 	background-color: var(--bgcolor);
 }
@@ -71,5 +86,7 @@ header {
 	display: flex;
 	justify-content: center;
 
-	padding: 2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 3rem;
 }
