@@ -7,7 +7,10 @@ function App() {
 			<NavBar />
 			<div id='center-pane1'>
 				<div id='center-pane2'>
-				<Welcome />
+					<Welcome />
+					<img className='logo' src='/logo.svg' alt='logo' />
+					<img className='logo' src='/logo.svg' alt='logo' />
+					<img className='logo' src='/logo.svg' alt='logo' />
 				</div>
 			</div>
 		</div>

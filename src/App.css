@@ -16,6 +16,7 @@
 
 	--black: #000;
 	--gray1: #222;
+	--gray2: #444;
 }
 /* Media queries to set rem */
 @media (min-width: 800px) {:root {font-size: 20px;}}
@@ -96,7 +97,7 @@ header {
 	border-radius: 1rem;
 	border-style: solid;
 	border-width: 1px;
-	border-color: var(--accent);
+	border-color: var(--gray2);
 
 	color: var(--fgcolor);
 	background-color: var(--black);
