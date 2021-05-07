@@ -5,8 +5,10 @@ function App() {
 	return (
 		<div id='App'>
 			<NavBar />
-			<div id='center-pane'>
+			<div id='center-pane1'>
+				<div id='center-pane2'>
 				<Welcome />
+				</div>
 			</div>
 		</div>
 	);
@@ -31,7 +33,7 @@ function Welcome() {
 		<div id='welcome-box'>
 			<h1>Who am I?</h1>
 			<p>
-				I'm your worst fuckin nightmare that's who. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus vero libero adipisci corrupti aperiam officiis itaque? Cumque consequatur aut asperiores, obcaecati ut, dolorum illum voluptatum, similique esse porro laborum totam?
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus vero libero adipisci corrupti aperiam officiis itaque? Cumque consequatur aut asperiores, obcaecati ut, dolorum illum voluptatum, similique esse porro laborum totam?
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut fugiat eos, ea repellendus inventore quam tempora, voluptates illum accusamus repudiandae sequi dignissimos quod nisi ratione illo adipisci vel explicabo.
 			</p>
 		</div>

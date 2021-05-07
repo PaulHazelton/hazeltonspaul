@@ -8,6 +8,7 @@
 	box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
+/* Variables */
 :root {
 	--bgcolor: #111;
 	--fgcolor: #fff;
@@ -16,29 +17,14 @@
 	--black: #000;
 	--gray1: #222;
 }
-@media (min-width: 800px) {
-	:root {
-		font-size: 20px;
-	}
-}
-@media (max-width: 800px) {
-	:root {
-		font-size: 16px;
-	}
-}
-@media (max-width: 600px) {
-	:root {
-		font-size: 12px;
-	}
-}
+/* Media queries to set rem */
+@media (min-width: 800px) {:root {font-size: 20px;}}
+@media (max-width: 800px) {:root {font-size: 16px;}}
+@media (max-width: 600px) {:root {font-size: 12px;}}
 
 body {
 	color: var(--fgcolor);
 	background-color: var(--bgcolor);
-}
-
-#App {
-	position: relative;
 }
 
 /* Nav bar stuff */
@@ -89,19 +75,22 @@ header {
 }
 
 /* Center Pane Stuff */
-#center-pane {
+#center-pane1 {
 	display: flex;
 	justify-content: center;
 
 	padding-left: 2rem;
 	padding-right: 2rem;
 	padding-top: 2rem;
+
+	width: 100%;
+}
+#center-pane2 {
+	max-width: 75ch;
 }
 
 /* Homepage stuff */
 #welcome-box {
-	width: 100%;
-	max-width: 75ch;
 	padding: 1rem;
 
 	border-radius: 1rem;
