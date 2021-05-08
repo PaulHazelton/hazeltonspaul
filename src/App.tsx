@@ -8,9 +8,7 @@ function App() {
 			<div id='center-pane1'>
 				<div id='center-pane2'>
 					<Welcome />
-					<img className='logo' src='/logo.svg' alt='logo' />
-					<img className='logo' src='/logo.svg' alt='logo' />
-					<img className='logo' src='/logo.svg' alt='logo' />
+					<ConnectList />
 				</div>
 			</div>
 		</div>
@@ -34,11 +32,51 @@ function NavBar() {
 function Welcome() {
 	return (
 		<div id='welcome-box'>
-			<h1>Who am I?</h1>
+			<h2>Who am I?</h2>
 			<p>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus vero libero adipisci corrupti aperiam officiis itaque? Cumque consequatur aut asperiores, obcaecati ut, dolorum illum voluptatum, similique esse porro laborum totam?
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut fugiat eos, ea repellendus inventore quam tempora, voluptates illum accusamus repudiandae sequi dignissimos quod nisi ratione illo adipisci vel explicabo.
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam commodi adipisci temporibus illo quo cupiditate. Esse, perferendis explicabo sunt, officiis quia a temporibus facilis molestiae dolorem obcaecati mollitia ea.
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident molestiae quo distinctio sint nemo aliquid quod, nulla officia dolores dolorem sunt? Molestiae quos iusto in cum facilis, a optio soluta.
 			</p>
+		</div>
+	);
+}
+
+function ConnectList() {
+	return (
+		<div id='connection-box'>
+			<h2>Other Places You Can Find Me</h2>
+			<div id='connection-list'>
+				<Connection
+					link={'https://github.com/PaulHazelton'}
+					imgPath={'/images/github-light-120.png'}
+					alt={'github'}
+				/>
+				<Connection
+					link={'https://www.linkedin.com/in/paul-hazelton/'}
+					imgPath={'/images/linked-in-circle.png'}
+					alt={'LinkedIn'}
+				/>
+				<Connection
+					link={'https://openprocessing.org/user/103154?view=sketches'}
+					imgPath={'/images/openprocessing-logo.png'}
+					alt={'Open Processing'}
+				/>
+			</div>
+		</div>
+	);
+}
+
+interface ConnectionProps {
+	link: string,
+	imgPath: string,
+	alt: string,
+}
+function Connection(props: ConnectionProps) {
+	return (
+		<div>
+			<a href={props.link} target='_blank' rel='noopener noreferrer'>
+				<img className='connection-item' src={props.imgPath} alt={props.alt} />
+			</a>
 		</div>
 	);
 }

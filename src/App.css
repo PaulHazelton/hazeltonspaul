@@ -15,6 +15,7 @@
 	--accent: #0ff;
 
 	--black: #000;
+	--white: #fff;
 	--gray1: #222;
 	--gray2: #444;
 }
@@ -34,9 +35,14 @@ header {
 	justify-content: space-between;
 	align-items: center;
 
-	padding: 1rem;
+	padding-left: 1rem;
+	height: 4rem;
 
 	background-color: var(--gray1);
+}
+
+.logo {
+	height: 75%;
 }
 
 #nav-link-list {
@@ -101,4 +107,27 @@ header {
 
 	color: var(--fgcolor);
 	background-color: var(--black);
+}
+
+#connection-box {
+	margin-top: 1rem;
+	padding: 1rem;
+
+	border-radius: 1rem;
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--gray2);
+}
+
+#connection-list {
+	padding-top: 1rem;
+	display: flex;
+}
+.connection-item {
+	margin-right: 1rem;
+	height: 4rem;
+
+	object-fit: cover;
+
+	border-radius: 50%;
 }
