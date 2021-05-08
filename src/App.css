@@ -10,13 +10,14 @@
 
 /* Variables */
 :root {
-	--bgcolor: #111;
+	--bgcolor: #000;
 	--fgcolor: #fff;
 	--accent: #0ff;
 
 	--black: #000;
 	--white: #fff;
-	--gray1: #222;
+	--gray0: #101010;
+	--gray1: #181818;
 	--gray2: #444;
 }
 /* Media queries to set rem */
@@ -106,7 +107,7 @@ header {
 	border-color: var(--gray2);
 
 	color: var(--fgcolor);
-	background-color: var(--black);
+	background-color: var(--gray1);
 }
 
 #connection-box {
@@ -117,8 +118,8 @@ header {
 	border-style: solid;
 	border-width: 1px;
 	border-color: var(--gray2);
+	background-color: var(--gray1);
 }
-
 #connection-list {
 	padding-top: 1rem;
 	display: flex;
