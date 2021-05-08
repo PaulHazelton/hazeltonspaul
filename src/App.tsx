@@ -50,16 +50,19 @@ function ConnectList() {
 					link={'https://github.com/PaulHazelton'}
 					imgPath={'/images/github-light-120.png'}
 					alt={'github'}
+					label={'GitHub'}
 				/>
 				<Connection
 					link={'https://www.linkedin.com/in/paul-hazelton/'}
 					imgPath={'/images/linked-in-circle.png'}
 					alt={'LinkedIn'}
+					label={'LinkedIn'}
 				/>
 				<Connection
 					link={'https://openprocessing.org/user/103154?view=sketches'}
 					imgPath={'/images/openprocessing-logo.png'}
 					alt={'Open Processing'}
+					label={'Open Processing'}
 				/>
 			</div>
 		</div>
@@ -70,13 +73,15 @@ interface ConnectionProps {
 	link: string,
 	imgPath: string,
 	alt: string,
+	label: string,
 }
 function Connection(props: ConnectionProps) {
 	return (
-		<div>
+		<div className='connection'>
 			<a href={props.link} target='_blank' rel='noopener noreferrer'>
-				<img className='connection-item' src={props.imgPath} alt={props.alt} />
+				<img className='connection-pic' src={props.imgPath} alt={props.alt} />
 			</a>
+			<h3 className='connection-label'>{props.label}</h3>
 		</div>
 	);
 }
