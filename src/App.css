@@ -16,6 +16,7 @@
 
 	--black: #000;
 	--white: #fff;
+	--offWhite: #ddd;
 	--gray0: #101010;
 	--gray1: #181818;
 	--gray2: #444;
@@ -89,7 +90,7 @@ header {
 
 	padding-left: 2rem;
 	padding-right: 2rem;
-	padding-top: 2rem;
+	padding-bottom: 4rem;
 
 	width: 100%;
 }
@@ -98,26 +99,75 @@ header {
 }
 
 /* Homepage stuff */
-#welcome-box {
-	padding: 1rem;
-
-	border-radius: 1rem;
-	border-style: solid;
-	border-width: 1px;
-	border-color: var(--gray2);
-
-	color: var(--fgcolor);
-	background-color: var(--gray1);
+h1 {
+	margin-top: 1rem;
+	padding-left: 1rem;
+	color: var(--offWhite);
+}
+hr {
+	margin-left: 1rem;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	border: 2px solid var(--offWhite);
+}
+a {
+	color: var(--accent);
+	text-decoration: none;
+	cursor: pointer;
+}
+a:hover {
+	text-decoration: underline;
 }
 
-#connection-box {
+button {
+	font-size: 1rem;
+	font-weight: bold;
+
+	display: inline-block;
+	border: 0;
+	cursor: pointer;
+
+	padding: 0.5em;
 	margin-top: 1rem;
+	
+
+	color: var(--bgcolor);
+	border: 2px solid var(--accent);
+	border-radius: 0.5em;
+	background-color: var(--accent);
+}
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -1rem;
+	transition: 0.5s;
+}
+.button:hover span {
+	padding-right: 1.25rem;
+}
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.info-box {
 	padding: 1rem;
+	margin-top: 1rem;
 
 	border-radius: 1rem;
 	border-style: solid;
 	border-width: 1px;
+	
 	border-color: var(--gray2);
+	color: var(--fgcolor);
 	background-color: var(--gray1);
 }
 #connection-list {
@@ -145,4 +195,24 @@ header {
 	width: 120%;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+.project-info {
+	max-width: 50%;
+	padding-right: 1rem;
+}
+#project-box {
+	/* min-height: 20rem; */
+	display: flex;
+}
+.project-img {
+	position: relative;
+	width: 100%;
+
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: center;
+
+	background-color: gray;
 }
