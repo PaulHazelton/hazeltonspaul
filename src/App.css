@@ -140,7 +140,7 @@ button {
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
-	transition: 0.5s;
+	transition: 200ms;
 }
 .button span:after {
 	content: '\00bb';
@@ -148,7 +148,7 @@ button {
 	opacity: 0;
 	top: 0;
 	right: -1rem;
-	transition: 0.5s;
+	transition: 200ms;
 }
 .button:hover span {
 	padding-right: 1.25rem;
@@ -198,21 +198,22 @@ button {
 }
 
 .project-info {
-	max-width: 50%;
+	width: 50%;
 	padding-right: 1rem;
 }
 #project-box {
-	/* min-height: 20rem; */
 	display: flex;
 }
-.project-img {
+.project-img-box {
 	position: relative;
-	width: 100%;
+	width: 50%;
+	align-self: flex-start;
+}
 
-	overflow: hidden;
-	background-repeat: no-repeat;
-	background-size:contain;
-	background-position: center;
+.project-img-box img {
 
-	background-color: gray;
+	max-width: 100%;
+	height: auto;
+
+	background-color: #555;
 }

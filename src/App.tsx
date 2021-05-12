@@ -101,7 +101,9 @@ function ProjectList() {
 				</p>
 				<button className='button'><span>View on GitHub</span></button>
 			</div>
-			<div className='project-img' style={{backgroundImage: 'url(images/ata-screenshot.png)'}} />
+			<div className='project-img-box'>
+				<img src='images/ata-screenshot.png' alt='TODO' />
+			</div>
 		</div>
 	);
 }
