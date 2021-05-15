@@ -55,6 +55,11 @@ header {
 
 .logo {
 	height: 75%;
+	transition: var(--time-3) ease;
+}
+.logo:hover {
+	transform: rotateZ(360deg);
+	transition: var(--time-3) ease;
 }
 
 #nav-link-list {
