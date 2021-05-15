@@ -81,7 +81,7 @@ interface ConnectionProps {
 function Connection(props: ConnectionProps) {
 	return (
 		<div className='connection'>
-			<ExtLink url={props.url}>
+			<ExtLink url={props.url} noCSS={true}>
 				<img className='connection-pic' src={props.imgPath} alt={props.alt} />
 			</ExtLink>
 			<h3 className='connection-label'>{props.label}</h3>
@@ -108,9 +108,9 @@ function ProjectList() {
 	);
 }
 
-function ExtLink(props: {url: string, children?: React.ReactNode}) {
+function ExtLink(props: {url: string, children?: React.ReactNode, noCSS?: boolean, className?: string}) {
 	return (
-		<a href={props.url} target='_blank' rel='noopener noreferrer'>{props.children}</a>
+		<a href={props.url} target='_blank' rel='noopener noreferrer' className={props.noCSS? '' : (props.className? props.className : 'ext-link')}>{props.children}</a>
 	);
 }
 
