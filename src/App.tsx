@@ -91,7 +91,9 @@ function ProjectList() {
 
 						You can view the site in action on the development server at <ExtLink url='https://allthingsauctionable.ml'>allthingsauctionable.ml</ExtLink>
 					</p>
-					<button className='button'><span>View on GitHub</span></button>
+					<ExtLink url='https://allthingsauctionable.ml'>
+						<button className='button'><span>View Site</span></button>
+					</ExtLink>
 				</div>
 				<div className='project-img-box'>
 					<img src='images/ata-screenshot.png' alt='TODO' />
