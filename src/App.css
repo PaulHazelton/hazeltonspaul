@@ -119,7 +119,7 @@ header {
 .heading {
 	position: sticky;
 	top: calc(4*1rem*var(--header-fs));
-	padding-bottom: 0.5rem;
+	padding-bottom: 0rem;
 	background-color: var(--bgcolor);
 	z-index: 2;
 }
@@ -129,8 +129,8 @@ h1 {
 	color: var(--offWhite);
 }
 hr {
-	margin-left: 1rem;
-	margin-right: 1rem;
+	/* margin-left: 1rem; */
+	/* margin-right: 1rem; */
 	margin-bottom: 1rem;
 	border: 2px solid var(--offWhite);
 }
