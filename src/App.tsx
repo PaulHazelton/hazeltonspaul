@@ -8,7 +8,7 @@ function App() {
 			<div id='center-pane1'>
 				<div id='center-pane2'>
 					<div className='section'>
-						<Heading text='Whats up?'/>
+						<Heading text='What&apos;s up?'/>
 						<Welcome />
 						<ConnectList />
 					</div>
