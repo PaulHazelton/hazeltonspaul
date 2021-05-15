@@ -19,6 +19,15 @@ function App() {
 }
 
 function NavBar() {
+
+	// window scroll thing
+	window.onscroll = function() {
+		if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10)
+			document.documentElement.style.setProperty('--header-fs', '0.8');
+		else
+			document.documentElement.style.setProperty('--header-fs', '1');
+	}
+
 	return (
 		<header>
 			<img className='logo' src='/logo.svg' alt='logo' />
