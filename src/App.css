@@ -129,7 +129,7 @@ button {
 	width: 11rem;
 	padding: 0.5em;
 	margin-top: 1rem;
-	float: right;	
+	float: left;
 
 	color: var(--bgcolor);
 	border: 2px solid var(--accent);
