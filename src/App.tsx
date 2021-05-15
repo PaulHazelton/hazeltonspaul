@@ -1,4 +1,5 @@
 import React from 'react';
+import { ExtLink, Heading, NavBar } from './common/components';
 import './App.css';
 
 function App() {
@@ -18,37 +19,6 @@ function App() {
 					</div>
 				</div>
 			</div>
-		</div>
-	);
-}
-
-function NavBar() {
-
-	// window scroll thing
-	window.onscroll = function() {
-		if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10)
-			document.documentElement.style.setProperty('--header-fs', '0.8');
-		else
-			document.documentElement.style.setProperty('--header-fs', '1');
-	}
-
-	return (
-		<header>
-			<img className='logo' src='/logo.svg' alt='logo' />
-			<nav>
-				<ul id='nav-link-list'>
-					<li>About Me</li>
-					<li>Contact Me</li>
-				</ul>
-			</nav>
-		</header>
-	);
-}
-
-function Heading(props: {text: string}) {
-	return(
-		<div className='heading'>
-			<h1>{props.text}</h1><hr></hr>
 		</div>
 	);
 }
@@ -170,12 +140,6 @@ function ProjectList() {
 				</div>
 			</div>
 		</>
-	);
-}
-
-function ExtLink(props: {url: string, children?: React.ReactNode, noCSS?: boolean, className?: string}) {
-	return (
-		<a href={props.url} target='_blank' rel='noopener noreferrer' className={props.noCSS? '' : (props.className? props.className : 'ext-link')}>{props.children}</a>
 	);
 }
 
