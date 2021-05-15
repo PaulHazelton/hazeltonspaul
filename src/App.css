@@ -50,7 +50,7 @@ header {
 	height: 4em;
 
 	background-color: var(--gray1);
-	transition: var(--time-1) ease-in-out;
+	transition: var(--time-2) ease-in-out;
 	z-index: 10;
 }
 
@@ -74,7 +74,7 @@ header {
 
 	font-size: 1.5em;
 
-	transition: var(--time-1) ease-in;
+	transition: var(--time-2) ease-in;
 
 	cursor: pointer;
 }
@@ -110,6 +110,8 @@ header {
 	padding-top: calc(4*1rem*var(--header-fs));
 
 	width: 100%;
+
+	/* transition: var(--time-2) ease-in; */
 }
 #center-pane2 {
 	max-width: 75ch;
@@ -118,8 +120,13 @@ header {
 /* Homepage stuff */
 .heading {
 	position: sticky;
-	top: calc(4*1rem*var(--header-fs));
+	/* This hides part of the heading under the navbar to ensure that the stuff in the back is occluded */
+	top: calc(4*1rem*var(--header-fs) - 1rem);
+	padding-top: 0.5rem;
 	padding-bottom: 0rem;
+
+	transition: var(--time-2) ease-in;
+
 	background-color: var(--bgcolor);
 	z-index: 2;
 }
