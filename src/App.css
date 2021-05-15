@@ -21,7 +21,10 @@
 	--gray1: #181818;
 	--gray2: #444;
 
-	--header-fs: 20px;
+	--header-fs: 1;
+	--time-1: 100ms;
+	--time-2: 250ms;
+	--time-3: 500ms;
 }
 /* Media queries to set rem */
 @media (min-width: 800px) {:root {font-size: 20px;}}
@@ -35,7 +38,7 @@ body {
 
 /* Nav bar stuff */
 header {
-	font-size: var(--header-fs);
+	font-size: calc(1rem * var(--header-fs));
 
 	position: fixed;
 	width: 100%;
@@ -47,6 +50,7 @@ header {
 	height: 4em;
 
 	background-color: var(--gray1);
+	transition: var(--time-1) ease-in-out;
 }
 
 .logo {
@@ -64,7 +68,7 @@ header {
 
 	font-size: 1.5em;
 
-	transition: 100ms ease-in;
+	transition: var(--time-1) ease-in;
 
 	cursor: pointer;
 }
@@ -81,7 +85,7 @@ header {
 	height: 2px;
 
 	transform: scaleX(0);
-	transition: transform 100ms ease-in;
+	transition: transform var(--time-1) ease-in;
 
 	background: var(--accent);
 }
@@ -97,7 +101,7 @@ header {
 	padding-left: 2rem;
 	padding-right: 2rem;
 	padding-bottom: 4rem;
-	padding-top: calc(4*var(--header-fs));
+	padding-top: calc(4*1rem*var(--header-fs));
 
 	width: 100%;
 }
@@ -133,7 +137,7 @@ hr {
 	height: 1px;
 
 	transform: scaleX(0);
-	transition: transform 100ms ease-in;
+	transition: transform var(--time-1) ease-in;
 
 	background: var(--accent);
 }
@@ -162,7 +166,7 @@ button {
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
-	transition: 200ms;
+	transition: var(--time-2);
 }
 .button span:after {
 	content: '\00bb';
@@ -170,7 +174,7 @@ button {
 	opacity: 0;
 	top: 0;
 	right: -1rem;
-	transition: 200ms;
+	transition: var(--time-2);
 }
 .button:hover span {
 	padding-right: 1.25rem;
@@ -208,11 +212,11 @@ button {
 
 	border-radius: 50%;
 
-	transition: 500ms ease;
+	transition: var(--time-3) ease;
 }
 .connection-pic:hover {
 	transform: rotateZ(360deg);
-	transition: 500ms ease;
+	transition: var(--time-3) ease;
 }
 
 .connection-label {
