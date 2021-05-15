@@ -7,11 +7,15 @@ function App() {
 			<NavBar />
 			<div id='center-pane1'>
 				<div id='center-pane2'>
-					<h1>What's up!?</h1><hr></hr>
-					<Welcome />
-					<ConnectList />
-					<h1>My Projects</h1><hr></hr>
-					<ProjectList />
+					<div className='section'>
+						<Heading text='Whats up?'/>
+						<Welcome />
+						<ConnectList />
+					</div>
+					<div className='section'>
+						<Heading text='My Projects'/>
+						<ProjectList />
+					</div>
 				</div>
 			</div>
 		</div>
@@ -38,6 +42,14 @@ function NavBar() {
 				</ul>
 			</nav>
 		</header>
+	);
+}
+
+function Heading(props: {text: string}) {
+	return(
+		<div className='heading'>
+			<h1>{props.text}</h1><hr></hr>
+		</div>
 	);
 }
 
@@ -100,20 +112,64 @@ function Connection(props: ConnectionProps) {
 
 function ProjectList() {
 	return (
-		<div className='info-box' id='project-box'>
-			<div className='project-info'>
-				<h2>All Things Auctionable</h2>
-				<p>
-					Auction software for the non-profit organization <ExtLink url='https://www.allthingspossible.org/'>All Things Possible</ExtLink>. This was a Winthrop University team project, but now it is being finished and maintained by myself and my friend Michael Hazell.
+		<>
+			<div className='info-box' id='project-box'>
+				<div className='project-info'>
+					<h2>All Things Auctionable</h2>
+					<p>
+						Auction software for the non-profit organization <ExtLink url='https://www.allthingspossible.org/'>All Things Possible</ExtLink>. This was a Winthrop University team project, but now it is being finished and maintained by myself and my friend Michael Hazell.
 
-					You can view the site in action on the development server at <ExtLink url='https://allthingsauctionable.ml'>allthingsauctionable.ml</ExtLink>
-				</p>
-				<button className='button'><span>View on GitHub</span></button>
+						You can view the site in action on the development server at <ExtLink url='https://allthingsauctionable.ml'>allthingsauctionable.ml</ExtLink>
+					</p>
+					<button className='button'><span>View on GitHub</span></button>
+				</div>
+				<div className='project-img-box'>
+					<img src='images/ata-screenshot.png' alt='TODO' />
+				</div>
 			</div>
-			<div className='project-img-box'>
-				<img src='images/ata-screenshot.png' alt='TODO' />
+			<div className='info-box' id='project-box'>
+				<div className='project-info'>
+					<h2>All Things Auctionable</h2>
+					<p>
+						Auction software for the non-profit organization <ExtLink url='https://www.allthingspossible.org/'>All Things Possible</ExtLink>. This was a Winthrop University team project, but now it is being finished and maintained by myself and my friend Michael Hazell.
+
+						You can view the site in action on the development server at <ExtLink url='https://allthingsauctionable.ml'>allthingsauctionable.ml</ExtLink>
+					</p>
+					<button className='button'><span>View on GitHub</span></button>
+				</div>
+				<div className='project-img-box'>
+					<img src='images/ata-screenshot.png' alt='TODO' />
+				</div>
 			</div>
-		</div>
+			<div className='info-box' id='project-box'>
+				<div className='project-info'>
+					<h2>All Things Auctionable</h2>
+					<p>
+						Auction software for the non-profit organization <ExtLink url='https://www.allthingspossible.org/'>All Things Possible</ExtLink>. This was a Winthrop University team project, but now it is being finished and maintained by myself and my friend Michael Hazell.
+
+						You can view the site in action on the development server at <ExtLink url='https://allthingsauctionable.ml'>allthingsauctionable.ml</ExtLink>
+					</p>
+					<button className='button'><span>View on GitHub</span></button>
+				</div>
+				<div className='project-img-box'>
+					<img src='images/ata-screenshot.png' alt='TODO' />
+				</div>
+			</div>
+			<div className='info-box' id='project-box'>
+				<div className='project-info'>
+					<h2>All Things Auctionable</h2>
+					<p>
+						Auction software for the non-profit organization <ExtLink url='https://www.allthingspossible.org/'>All Things Possible</ExtLink>. This was a Winthrop University team project, but now it is being finished and maintained by myself and my friend Michael Hazell.
+
+						You can view the site in action on the development server at <ExtLink url='https://allthingsauctionable.ml'>allthingsauctionable.ml</ExtLink>
+					</p>
+					<button className='button'><span>View on GitHub</span></button>
+				</div>
+				<div className='project-img-box'>
+					<img src='images/ata-screenshot.png' alt='TODO' />
+				</div>
+			</div>
+		</>
 	);
 }
 
