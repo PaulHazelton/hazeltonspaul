@@ -172,7 +172,8 @@ button {
 	border: 0;
 	cursor: pointer;
 
-	width: 11rem;
+	/* width: 11rem; */
+	width: 100%;
 	padding: 0.5em;
 	margin-top: 1rem;
 	float: left;
@@ -238,7 +239,6 @@ button {
 	transform: rotateZ(360deg);
 	transition: var(--time-3) ease;
 }
-
 .connection-label {
 	font-size: 1rem;
 	font-weight: normal;
@@ -250,17 +250,13 @@ button {
 	transform: translateX(-50%);
 }
 
-.project-info {
-	width: 50%;
-	padding-right: 1rem;
-}
 #project-box {
 	display: flex;
 }
 .project-img-box {
 	position: relative;
-	width: 50%;
 	align-self: flex-start;
+	margin-top: 1rem;
 }
 .project-img-box img {
 
@@ -268,4 +264,14 @@ button {
 	height: auto;
 
 	background-color: #555;
+}
+@media (max-width: 600px) {
+	#project-box {flex-direction: column;}
+}
+@media (min-width: 600px) {
+	.project-info {
+		width: 50%;
+		padding-right: 1rem;
+	}
+	.project-img-box {width: 50%}
 }
