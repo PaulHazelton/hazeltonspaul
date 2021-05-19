@@ -8,9 +8,9 @@ function App() {
 		<div id='App'>
 			<NavBar />
 			<div id='center-pane1'>
-				<div id='center-pane2'>
-					<Home />
-				</div>
+			<div id='center-pane2'>
+				<Home />
+			</div>
 			</div>
 		</div>
 	);
