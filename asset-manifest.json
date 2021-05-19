@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/hazeltonspaul.com/static/css/main.32e972af.chunk.css",
+    "main.js": "/hazeltonspaul.com/static/js/main.80c88b42.chunk.js",
+    "main.js.map": "/hazeltonspaul.com/static/js/main.80c88b42.chunk.js.map",
+    "runtime-main.js": "/hazeltonspaul.com/static/js/runtime-main.dc9e03de.js",
+    "runtime-main.js.map": "/hazeltonspaul.com/static/js/runtime-main.dc9e03de.js.map",
+    "static/js/2.c2d8ebde.chunk.js": "/hazeltonspaul.com/static/js/2.c2d8ebde.chunk.js",
+    "static/js/2.c2d8ebde.chunk.js.map": "/hazeltonspaul.com/static/js/2.c2d8ebde.chunk.js.map",
+    "static/js/3.ebd94a99.chunk.js": "/hazeltonspaul.com/static/js/3.ebd94a99.chunk.js",
+    "static/js/3.ebd94a99.chunk.js.map": "/hazeltonspaul.com/static/js/3.ebd94a99.chunk.js.map",
+    "index.html": "/hazeltonspaul.com/index.html",
+    "static/css/main.32e972af.chunk.css.map": "/hazeltonspaul.com/static/css/main.32e972af.chunk.css.map",
+    "static/js/2.c2d8ebde.chunk.js.LICENSE.txt": "/hazeltonspaul.com/static/js/2.c2d8ebde.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dc9e03de.js",
+    "static/js/2.c2d8ebde.chunk.js",
+    "static/css/main.32e972af.chunk.css",
+    "static/js/main.80c88b42.chunk.js"
+  ]
+}
