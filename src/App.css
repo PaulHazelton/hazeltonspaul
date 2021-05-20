@@ -35,7 +35,7 @@
 @media (min-width: 800px) {:root {font-size: 20px;}}
 @media (max-width: 800px) {:root {font-size: 16px;}}
 @media (max-width: 600px) {:root {font-size: 16px;}}
-
+/* Setting colors */
 body {
 	color: var(--fgcolor);
 	background-color: var(--bgcolor);
@@ -58,7 +58,7 @@ header {
 	transition: var(--time-2) ease-in-out;
 	z-index: 10;
 }
-
+/* Logo */
 .logo {
 	height: 75%;
 	transition: var(--time-3) ease;
@@ -67,12 +67,11 @@ header {
 	transform: rotateZ(360deg);
 	transition: var(--time-3) ease;
 }
-
+/* Nav items */
 #nav-link-list {
 	list-style: none;
 	display: flex;
 }
-
 #nav-link-list li {
 	position: relative;
 	margin: 0 1.3em;
@@ -104,7 +103,7 @@ header {
 	transform: scaleX(1);
 }
 
-/* Center Pane Stuff */
+/* Center Pane. There's two for proper sizing, its a pain */
 #center-pane1 {
 	display: flex;
 	justify-content: center;
@@ -124,15 +123,14 @@ header {
 .heading {
 	position: sticky;
 	/* This hides part of the heading under the navbar to ensure that the stuff in the back is occluded */
-	/* top: calc(4*1rem*var(--header-fs) - 1rem); */
-	top: 2.2rem;
+	top: calc(4*1rem*0.8 - 1rem); /* The 0.8 is the smaller scale of the header */
 	padding-top: 0.5rem;
 	padding-bottom: 0rem;
 
-	transition: var(--time-2) ease-in;
-
 	background-color: var(--bgcolor);
 	z-index: 2;
+	
+	transition: var(--time-2) ease-in;
 }
 h1 {
 	margin-top: 1rem;
@@ -167,6 +165,7 @@ hr {
 	transform: scaleX(1);
 }
 
+/* Fancy button style from W3 */
 button {
 	font-size: 1rem;
 	font-weight: bold;
@@ -206,6 +205,7 @@ button {
 	right: 0;
 }
 
+/* Content Stuff */
 .info-box {
 	padding: 1rem;
 	margin-bottom: 1rem;
@@ -218,6 +218,8 @@ button {
 	color: var(--fgcolor);
 	background-color: var(--gray1);
 }
+
+/* Connections like github and linkedin */
 #connection-list {
 	padding-top: 1rem;
 	display: flex;
@@ -227,12 +229,8 @@ button {
 }
 .connection-pic {
 	width: 100%;
-	/* height: 4rem; */
-
 	object-fit: cover;
-
 	border-radius: 50%;
-
 	transition: var(--time-3) ease;
 }
 .connection-pic:hover {
@@ -250,6 +248,7 @@ button {
 	transform: translateX(-50%);
 }
 
+/* Projects like ATA and games */
 #project-box {
 	display: flex;
 }
@@ -259,14 +258,13 @@ button {
 	margin-top: 1rem;
 }
 .project-img-box img {
-
 	max-width: 100%;
 	height: auto;
-
 	background-color: #555;
 }
 @media (max-width: 600px) {
 	#project-box {flex-direction: column;}
+	
 	#connection-list {
 		flex-direction: column;
 		align-items: center;
@@ -285,6 +283,7 @@ button {
 		padding-right: 1rem;
 	}
 	.project-img-box {width: 50%;}
+
 	.connection {
 		width: 4rem;
 	}
