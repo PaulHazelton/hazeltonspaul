@@ -35,19 +35,19 @@ function ConnectList() {
 			<div id='connection-list'>
 				<Connection
 					url={'https://github.com/PaulHazelton'}
-					imgPath={'/images/github-light-120.png'}
+					imgPath={'images/github-light-120.png'}
 					alt={'github'}
 					label={'GitHub'}
 				/>
 				<Connection
 					url={'https://www.linkedin.com/in/paul-hazelton/'}
-					imgPath={'/images/linked-in-circle.png'}
+					imgPath={'images/linked-in-circle.png'}
 					alt={'LinkedIn'}
 					label={'LinkedIn'}
 				/>
 				<Connection
 					url={'https://openprocessing.org/user/103154?view=sketches'}
-					imgPath={'/images/openprocessing-logo.png'}
+					imgPath={'images/openprocessing-logo.png'}
 					alt={'Open Processing'}
 					label={'Open Processing'}
 				/>

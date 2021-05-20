@@ -10,7 +10,7 @@ export function NavBar() {
 
 	return (
 		<header>
-			<img className='logo' src='/logo.svg' alt='logo' />
+			<img className='logo' src='./logo.svg' alt='logo' />
 			<nav>
 				<ul id='nav-link-list'>
 					<li>About Me</li>
