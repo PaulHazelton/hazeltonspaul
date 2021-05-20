@@ -10,10 +10,12 @@
 
 /* Variables */
 :root {
+	/* Main colors */
 	--bgcolor: #000;
 	--fgcolor: #fff;
 	--accent: #0ff;
-
+	
+	/* Standard colors for this site */
 	--black: #000;
 	--white: #fff;
 	--offWhite: #ddd;
@@ -21,7 +23,10 @@
 	--gray1: #181818;
 	--gray2: #444;
 
+	/* Header font scale to shrink on scroll */
 	--header-fs: 1;
+
+	/* Animation timings */
 	--time-1: 100ms;
 	--time-2: 250ms;
 	--time-3: 500ms;
@@ -29,7 +34,7 @@
 /* Media queries to set rem */
 @media (min-width: 800px) {:root {font-size: 20px;}}
 @media (max-width: 800px) {:root {font-size: 16px;}}
-@media (max-width: 600px) {:root {font-size: 12px;}}
+@media (max-width: 600px) {:root {font-size: 16px;}}
 
 body {
 	color: var(--fgcolor);
@@ -107,12 +112,9 @@ header {
 	padding-left: 2rem;
 	padding-right: 2rem;
 	padding-bottom: 4rem;
-	/* padding-top: calc(4*1rem*var(--header-fs)); */
-	padding-top: calc(4*1rem);
+	padding-top: 4rem;
 
 	width: 100%;
-
-	/* transition: var(--time-2) ease-in; */
 }
 #center-pane2 {
 	max-width: 75ch;
@@ -122,7 +124,8 @@ header {
 .heading {
 	position: sticky;
 	/* This hides part of the heading under the navbar to ensure that the stuff in the back is occluded */
-	top: calc(4*1rem*var(--header-fs) - 1rem);
+	/* top: calc(4*1rem*var(--header-fs) - 1rem); */
+	top: 2.2rem;
 	padding-top: 0.5rem;
 	padding-bottom: 0rem;
 
@@ -137,8 +140,6 @@ h1 {
 	color: var(--offWhite);
 }
 hr {
-	/* margin-left: 1rem; */
-	/* margin-right: 1rem; */
 	margin-bottom: 1rem;
 	border: 2px solid var(--offWhite);
 }
@@ -180,7 +181,6 @@ button {
 	float: left;
 
 	color: var(--bgcolor);
-	border: 2px solid var(--accent);
 	border-radius: 0.5em;
 	background-color: var(--accent);
 }
@@ -224,11 +224,10 @@ button {
 }
 .connection {
 	position: relative;
-	width: 4rem;
-	margin-right: 2rem;
 }
 .connection-pic {
-	height: 4rem;
+	width: 100%;
+	/* height: 4rem; */
 
 	object-fit: cover;
 
@@ -268,11 +267,28 @@ button {
 }
 @media (max-width: 600px) {
 	#project-box {flex-direction: column;}
+	#connection-list {
+		flex-direction: column;
+		align-items: center;
+	}
+	.connection {
+		width: 100%;
+		max-width: 8rem;
+	}
+	.connection:not(:last-child) {
+		margin-bottom: 2rem;
+	}
 }
 @media (min-width: 600px) {
 	.project-info {
 		width: 50%;
 		padding-right: 1rem;
 	}
-	.project-img-box {width: 50%}
+	.project-img-box {width: 50%;}
+	.connection {
+		width: 4rem;
+	}
+	.connection:not(:last-child) {
+		margin-right: 2rem;
+	}
 }
