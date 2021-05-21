@@ -139,9 +139,18 @@ nav {
 	padding-left: 2rem;
 	padding-right: 2rem;
 	padding-bottom: 4rem;
-	padding-top: 4rem;
 
 	width: 100%;
+}
+@media (min-width: 800px) {
+	#center-pane1 {
+		padding-top: calc(4*1rem*1 - 1rem);
+	}
+}
+@media (max-width: 800px) {
+	#center-pane1 {
+		padding-top: calc(4*1rem*0.8 - 1rem);
+	}
 }
 #center-pane2 {
 	max-width: 75ch;
@@ -254,6 +263,7 @@ button {
 }
 .connection {
 	position: relative;
+	width: 4rem;
 }
 .connection-pic {
 	width: 100%;
@@ -294,15 +304,16 @@ button {
 	#project-box {flex-direction: column;}
 	
 	#connection-list {
-		flex-direction: column;
-		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		position: relative;
+		top: -1rem;
+		justify-content: center;
 	}
 	.connection {
-		width: 100%;
-		max-width: 8rem;
-	}
-	.connection:not(:last-child) {
-		margin-bottom: 2rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-top: 1rem;
 	}
 }
 @media (min-width: 600px) {
@@ -312,9 +323,6 @@ button {
 	}
 	.project-img-box {width: 50%;}
 
-	.connection {
-		width: 4rem;
-	}
 	.connection:not(:last-child) {
 		margin-right: 2rem;
 	}
