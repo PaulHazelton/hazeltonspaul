@@ -13,8 +13,9 @@ export function NavBar() {
 			<img className='logo' src='./logo.svg' alt='logo' />
 			<nav>
 				<ul id='nav-link-list'>
-					<li>About Me</li>
-					<li>Contact Me</li>
+					<li id='nav-list-item'>About Me</li>
+					<li id='nav-list-item'>Contact Me</li>
+					<li id='overflow-x-space'></li>
 				</ul>
 			</nav>
 		</header>

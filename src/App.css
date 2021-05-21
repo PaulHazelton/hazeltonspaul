@@ -41,6 +41,7 @@ body {
 	background-color: var(--bgcolor);
 }
 
+
 /* Nav bar stuff */
 header {
 	font-size: calc(1rem * var(--header-fs));
@@ -71,21 +72,42 @@ header {
 #nav-link-list {
 	list-style: none;
 	display: flex;
+	width: 100%;
 }
-#nav-link-list li {
+nav {
+	display: block;
+	box-sizing: content-box;
+	overflow-x: auto;
+	overflow-y: hidden;
+	scrollbar-width: none;
+}
+#nav-link-list:after {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	pointer-events: none;
+	background-image: linear-gradient(to right, rgba(255,255,255, 0), var(--gray1) 100%);
+	width: 2em;
+	height: 100%;
+}
+#nav-list-item {
+	font-size: 1.5em;
+
 	position: relative;
 	margin: 0 1.3em;
 
-	font-size: 1.5em;
+	white-space: nowrap;
 
 	transition: var(--time-2) ease-in;
 
 	cursor: pointer;
 }
-#nav-link-list li:hover {
+#nav-list-item:hover {
 	color: var(--accent);
 }
-#nav-link-list li::after {
+#nav-list-item::after {
 	content: '';
 	position: absolute;
 
@@ -99,8 +121,17 @@ header {
 
 	background: var(--accent);
 }
-#nav-link-list li:hover::after {
+#nav-list-item:hover::after {
 	transform: scaleX(1);
+}
+#overflow-x-space:after {
+	content: '';
+	display: block;
+	position: relative;
+	right: 0;
+	width: 0;
+	height: 1px;
+	margin-right: 1px;
 }
 
 /* Center Pane. There's two for proper sizing, its a pain */
