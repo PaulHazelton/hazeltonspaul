@@ -2,10 +2,14 @@ export function NavBar() {
 
 	// window scroll thing
 	window.onscroll = function() {
+		if (!window.matchMedia('(min-width: 800px)').matches)
+			return;
+
 		if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5)
 			document.documentElement.style.setProperty('--header-fs', '0.8');
-		else
+		else {
 			document.documentElement.style.setProperty('--header-fs', '1');
+		}
 	}
 
 	return (

@@ -23,17 +23,14 @@
 	--gray1: #181818;
 	--gray2: #444;
 
-	/* Header font scale to shrink on scroll */
-	--header-fs: 1;
-
 	/* Animation timings */
 	--time-1: 100ms;
 	--time-2: 250ms;
 	--time-3: 500ms;
 }
 /* Media queries to set rem */
-@media (min-width: 800px) {:root {font-size: 20px;}}
-@media (max-width: 800px) {:root {font-size: 16px;}}
+@media (min-width: 800px) {:root {font-size: 20px; --header-fs: 1;}}
+@media (max-width: 800px) {:root {font-size: 16px; --header-fs: 0.8;}}
 @media (max-width: 600px) {:root {font-size: 16px;}}
 /* Setting colors */
 body {
