@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/hazeltonspaul/static/css/main.44a870b8.chunk.css",
-    "main.js": "/hazeltonspaul/static/js/main.3a63d0a3.chunk.js",
-    "main.js.map": "/hazeltonspaul/static/js/main.3a63d0a3.chunk.js.map",
+    "main.css": "/hazeltonspaul/static/css/main.929697fe.chunk.css",
+    "main.js": "/hazeltonspaul/static/js/main.64406c6e.chunk.js",
+    "main.js.map": "/hazeltonspaul/static/js/main.64406c6e.chunk.js.map",
     "runtime-main.js": "/hazeltonspaul/static/js/runtime-main.4a3ae01a.js",
     "runtime-main.js.map": "/hazeltonspaul/static/js/runtime-main.4a3ae01a.js.map",
     "static/js/2.c2d8ebde.chunk.js": "/hazeltonspaul/static/js/2.c2d8ebde.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.ebd94a99.chunk.js": "/hazeltonspaul/static/js/3.ebd94a99.chunk.js",
     "static/js/3.ebd94a99.chunk.js.map": "/hazeltonspaul/static/js/3.ebd94a99.chunk.js.map",
     "index.html": "/hazeltonspaul/index.html",
-    "static/css/main.44a870b8.chunk.css.map": "/hazeltonspaul/static/css/main.44a870b8.chunk.css.map",
+    "static/css/main.929697fe.chunk.css.map": "/hazeltonspaul/static/css/main.929697fe.chunk.css.map",
     "static/js/2.c2d8ebde.chunk.js.LICENSE.txt": "/hazeltonspaul/static/js/2.c2d8ebde.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4a3ae01a.js",
     "static/js/2.c2d8ebde.chunk.js",
-    "static/css/main.44a870b8.chunk.css",
-    "static/js/main.3a63d0a3.chunk.js"
+    "static/css/main.929697fe.chunk.css",
+    "static/js/main.64406c6e.chunk.js"
   ]
 }
