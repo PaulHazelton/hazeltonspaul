@@ -65,7 +65,7 @@ interface ConnectionProps {
 function Connection(props: ConnectionProps) {
 	return (
 		<div className='connection'>
-			<ExtLink url={props.url} noCSS={true}>
+			<ExtLink url={props.url} className='connection-link'>
 				<img className='connection-pic' src={props.imgPath} alt={props.alt} />
 			</ExtLink>
 			<h3 className='connection-label'>{props.label}</h3>
@@ -84,9 +84,9 @@ function ProjectList() {
 
 						You can view the site in action on the development server at <ExtLink url='https://allthingsauctionable.ml'>allthingsauctionable.ml</ExtLink>
 					</p>
-					<ExtLink url='https://allthingsauctionable.ml'>
+					{/* <ExtLink url='https://allthingsauctionable.ml'> */}
 						<button className='button'><span>View Site</span></button>
-					</ExtLink>
+					{/* </ExtLink> */}
 				</div>
 				<div className='project-img-box'>
 					<img src='images/ata-screenshot.png' alt='TODO' />
