@@ -42,6 +42,16 @@ body {
 	background-color: var(--bgcolor);
 }
 
+/* General Stuff */
+.img-box {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.big-img {
+	width: 40%;
+}
+
 /* Nav bar stuff */
 header {
 	font-size: calc(1rem * var(--header-fs));
@@ -60,13 +70,22 @@ header {
 	z-index: 10;
 }
 /* Logo */
-.logo {
+#logo-link {
 	height: 75%;
+	display: flex;
+	align-items: center;
+	border-radius: 50%;
 	transition: var(--time-3) ease;
 }
-.logo:hover {
+.logo {
+	height: 100%;
+}
+#logo-link:hover,
+#logo-link:focus {
 	transform: rotateZ(360deg);
-	transition: var(--time-3) ease;
+	border-radius: 50%;
+	border: 2px solid var(--accent);
+	transition: transform var(--time-3) ease;
 }
 /* Nav items */
 #nav-link-list {
@@ -96,14 +115,17 @@ nav {
 
 	position: relative;
 	margin: 0 1.3em;
-
 	white-space: nowrap;
+	text-decoration: none;
+
+	color: var(--fgcolor);
 
 	transition: var(--time-2) ease-in;
 
 	cursor: pointer;
 }
-#nav-list-item:hover {
+#nav-list-item:hover,
+#nav-list-item:focus {
 	color: var(--accent);
 }
 #nav-list-item::after {
@@ -120,7 +142,8 @@ nav {
 
 	background: var(--accent);
 }
-#nav-list-item:hover::after {
+#nav-list-item:hover::after,
+#nav-list-item:focus::after {
 	transform: scaleX(1);
 }
 #overflow-x-space:after {

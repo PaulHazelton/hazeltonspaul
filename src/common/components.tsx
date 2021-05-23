@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export function NavBar() {
 
 	// window scroll thing
@@ -14,11 +16,11 @@ export function NavBar() {
 
 	return (
 		<header>
-			<img className='logo' src='./logo.svg' alt='logo' />
+			<Link to='/' id='logo-link'><img className='logo' src='./logo.svg' alt='logo' /></Link>
 			<nav>
 				<ul id='nav-link-list'>
-					<li id='nav-list-item'>About Me</li>
-					<li id='nav-list-item'>Contact Me</li>
+					<Link to='/about' id='nav-list-item'>About Me</Link>
+					<Link to='/contact' id='nav-list-item'>Contact Me</Link>
 					<li id='overflow-x-space'></li>
 				</ul>
 			</nav>
