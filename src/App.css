@@ -251,7 +251,6 @@ nav {
 
 /* Homepage stuff */
 .heading {
-	position: sticky;
 	/* This hides part of the heading under the navbar to ensure that the stuff in the back is occluded */
 	top: calc(4*1rem*0.8 - 1rem); /* The 0.8 is the smaller scale of the header */
 	padding-top: 0.5rem;
@@ -340,6 +339,14 @@ hr {
 }
 
 /* Content Stuff */
+#welcome-box {
+	font-size: 2rem;
+	padding: 1rem;
+	text-align: center;
+}
+#welcome-section {
+	margin-bottom: 30vh;
+}
 .info-box {
 	padding: 1rem;
 	margin-bottom: 1rem;
@@ -357,6 +364,7 @@ hr {
 #connection-list {
 	padding-top: 1rem;
 	display: flex;
+	justify-content: center;
 }
 .connection {
 	position: relative;
@@ -386,21 +394,36 @@ hr {
 }
 
 /* Projects like ATA and games */
+#project-section .heading{
+	position: sticky;
+}
 #project-box {
 	display: flex;
+	margin-bottom: 2rem;
+}
+.project-info {
+	width: 60%;
 }
 .project-img-box {
 	position: relative;
 	align-self: flex-start;
+	margin: auto;
 	margin-top: 1rem;
+	width: 40%;
 }
 .project-img-box img {
 	max-width: 100%;
-	height: auto;
-	background-color: #555;
+	/* min-width: 30%; */
+	height: 100%;
 }
 @media (max-width: 600px) {
-	#project-box {flex-direction: column;}
+	#project-box {
+		flex-direction: column;
+	}
+
+	.project-info {
+		width: 100%;
+	}
 	
 	#connection-list {
 		flex-direction: row;
@@ -417,10 +440,9 @@ hr {
 }
 @media (min-width: 600px) {
 	.project-info {
-		width: 50%;
 		padding-right: 1rem;
 	}
-	.project-img-box {width: 50%;}
+	/* .project-img-box {width: 50%;} */
 
 	.connection:not(:last-child) {
 		margin-right: 2rem;

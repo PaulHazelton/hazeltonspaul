@@ -19,6 +19,7 @@ function App() {
 	const [showPopUp, setShowPopUp] = useState<boolean>(false);
 
 	// Creates a pop up. This replaces setPopData and setShowPopUp
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	function createPopUp(data: PopData) {
 		setPopData(data);
 		setShowPopUp(true);

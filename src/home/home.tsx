@@ -3,14 +3,17 @@ import { ExtLink, Heading } from '../common/components';
 function Home() {
 	return (
 		<>
-			<div className='section'>
+			<div className='section' id='welcome-section'>
 				<Heading text='What&apos;s up?'/>
 				<Welcome />
-				<ConnectList />
 			</div>
-			<div className='section'>
+			<div className='section' id='project-section'>
 				<Heading text='My Projects'/>
 				<ProjectList />
+			</div>
+			<div className='section'>
+				<Heading text='Other Places You Can Find Me' />
+				<ConnectList />
 			</div>
 		</>
 	);
@@ -18,20 +21,16 @@ function Home() {
 
 function Welcome() {
 	return (
-		<div className='info-box'>
-			<h2>Who am I?</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam commodi adipisci temporibus illo quo cupiditate. Esse, perferendis explicabo sunt, officiis quia a temporibus facilis molestiae dolorem obcaecati mollitia ea.
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident molestiae quo distinctio sint nemo aliquid quod, nulla officia dolores dolorem sunt? Molestiae quos iusto in cum facilis, a optio soluta.
-			</p>
+		<div id='welcome-box'>
+			My name is Paul Hazelton. I'm a web developer, programmer, and game designer.
 		</div>
 	);
 }
 
 function ConnectList() {
 	return (
-		<div className='info-box'>
-			<h2>Other Places You Can Find Me</h2>
+		<div className='section'>
+			{/* <h2>Other Places You Can Find Me</h2> */}
 			<div id='connection-list'>
 				<Connection
 					url={'https://github.com/PaulHazelton'}
@@ -78,6 +77,18 @@ function ProjectList() {
 		<>
 			<div className='info-box' id='project-box'>
 				<div className='project-info'>
+					<h2>This Site!</h2>
+					<p>
+						This site is currently under construction!<br></br>
+						This very site is a typescript react app. I really like working with react, so I decided to make my portfolio with it.
+					</p>
+				</div>
+				<div className='project-img-box'>
+					<img src='images/construction.png' alt='TODO' />
+				</div>
+			</div>
+			<div className='info-box' id='project-box'>
+				<div className='project-info'>
 					<h2>All Things Auctionable</h2>
 					<p>
 						Auction software for the non-profit organization <ExtLink url='https://www.allthingspossible.org/'>All Things Possible</ExtLink>. This was a Winthrop University team project, but now it is being finished and maintained by myself and my friend Michael Hazell.
@@ -87,48 +98,6 @@ function ProjectList() {
 					{/* <ExtLink url='https://allthingsauctionable.ml'> */}
 						<button className='button'><span>View Site</span></button>
 					{/* </ExtLink> */}
-				</div>
-				<div className='project-img-box'>
-					<img src='images/ata-screenshot.png' alt='TODO' />
-				</div>
-			</div>
-			<div className='info-box' id='project-box'>
-				<div className='project-info'>
-					<h2>All Things Auctionable</h2>
-					<p>
-						Auction software for the non-profit organization <ExtLink url='https://www.allthingspossible.org/'>All Things Possible</ExtLink>. This was a Winthrop University team project, but now it is being finished and maintained by myself and my friend Michael Hazell.
-
-						You can view the site in action on the development server at <ExtLink url='https://allthingsauctionable.ml'>allthingsauctionable.ml</ExtLink>
-					</p>
-					<button className='button'><span>View on GitHub</span></button>
-				</div>
-				<div className='project-img-box'>
-					<img src='images/ata-screenshot.png' alt='TODO' />
-				</div>
-			</div>
-			<div className='info-box' id='project-box'>
-				<div className='project-info'>
-					<h2>All Things Auctionable</h2>
-					<p>
-						Auction software for the non-profit organization <ExtLink url='https://www.allthingspossible.org/'>All Things Possible</ExtLink>. This was a Winthrop University team project, but now it is being finished and maintained by myself and my friend Michael Hazell.
-
-						You can view the site in action on the development server at <ExtLink url='https://allthingsauctionable.ml'>allthingsauctionable.ml</ExtLink>
-					</p>
-					<button className='button'><span>View on GitHub</span></button>
-				</div>
-				<div className='project-img-box'>
-					<img src='images/ata-screenshot.png' alt='TODO' />
-				</div>
-			</div>
-			<div className='info-box' id='project-box'>
-				<div className='project-info'>
-					<h2>All Things Auctionable</h2>
-					<p>
-						Auction software for the non-profit organization <ExtLink url='https://www.allthingspossible.org/'>All Things Possible</ExtLink>. This was a Winthrop University team project, but now it is being finished and maintained by myself and my friend Michael Hazell.
-
-						You can view the site in action on the development server at <ExtLink url='https://allthingsauctionable.ml'>allthingsauctionable.ml</ExtLink>
-					</p>
-					<button className='button'><span>View on GitHub</span></button>
 				</div>
 				<div className='project-img-box'>
 					<img src='images/ata-screenshot.png' alt='TODO' />
