@@ -80,7 +80,7 @@ function ProjectList() {
 					<h2>This Site!</h2>
 					<p>
 						This site is currently under construction!<br></br>
-						This very site is a typescript react app. I really like working with react, so I decided to make my portfolio with it.
+						This very site is a TypeScript React app. I really like working with React, so I decided to make my portfolio with it.
 					</p>
 				</div>
 				<div className='project-img-box'>

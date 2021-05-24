@@ -120,12 +120,11 @@ nav {
 
 	color: var(--fgcolor);
 
-	transition: var(--time-2) ease-in;
+	transition: transform var(--time-2) ease-in;
 
 	cursor: pointer;
 }
-#nav-list-item:hover,
-#nav-list-item:focus {
+#nav-list-item:hover {
 	color: var(--accent);
 }
 #nav-list-item::after {
@@ -145,6 +144,7 @@ nav {
 #nav-list-item:hover::after,
 #nav-list-item:focus::after {
 	transform: scaleX(1);
+	transition: transform var(--time-1) ease-in;
 }
 #overflow-x-space:after {
 	content: '';
@@ -158,6 +158,7 @@ nav {
 
 /* Center Pane. There's two for proper sizing, its a pain */
 #center-pane1 {
+	position: relative;
 	display: flex;
 	justify-content: center;
 
@@ -179,6 +180,7 @@ nav {
 }
 #center-pane2 {
 	max-width: 75ch;
+	padding-top: 0;
 }
 
 /* Popup stuff */
@@ -280,7 +282,7 @@ nav {
 .heading {
 	/* This hides part of the heading under the navbar to ensure that the stuff in the back is occluded */
 	top: calc(4*1rem*0.8 - 1rem); /* The 0.8 is the smaller scale of the header */
-	padding-top: 0.5rem;
+	padding-top: 2rem;
 	padding-bottom: 0rem;
 	margin-bottom: 1rem;
 
@@ -299,6 +301,9 @@ hr {
 	border: none;
 	background-color: var(--offWhite);
 	height: 4px;
+}
+p {
+	margin-bottom: 2rem;
 }
 .ext-link {
 	position: relative;
@@ -373,9 +378,9 @@ hr {
 	font-size: 2rem;
 	padding: 1rem;
 	text-align: center;
-	margin-top: 4rem;
 }
 #welcome-section {
+	padding-top: 2rem;
 	margin-bottom: 30vh;
 }
 .info-box {
@@ -405,16 +410,18 @@ hr {
 	width: 100%;
 	object-fit: cover;
 	border-radius: 50%;
-	transition: var(--time-3) ease;
+	transition: transform var(--time-3) ease;
 }
-.connection-link:hover .connection-pic,
-.connection-link:focus .connection-pic {
+.connection-link:hover .connection-pic {
 	transform: rotateZ(360deg);
 	transition: transform var(--time-3) ease;
+}
+.connection-link:focus .connection-pic {
 	border: 2px solid var(--accent);
 	outline-style: none;
 	outline-width: 0px;
 	outline: none;
+	transition: 0;
 }
 .connection-label {
 	font-size: 1rem;
