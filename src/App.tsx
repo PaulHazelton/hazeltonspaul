@@ -4,7 +4,7 @@ import './App.css';
 import Home from './home/home';
 import { PopData } from './common/interfaces';
 import PopUp from './common/popups';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, HashRouter } from 'react-router-dom';
 import About from './about/about';
 import Contact from './contact/contact';
 
@@ -29,7 +29,7 @@ function App() {
 	}
 
 	return (
-		<BrowserRouter>
+		<HashRouter>
 		<div id='App'>
 			<NavBar />
 			<div id='center-pane1'>
@@ -52,7 +52,7 @@ function App() {
 				showPopUp ? <PopUp setShowPopUp={setShowPopUp} data={popData} /> : null
 			}
 		</div>
-		</BrowserRouter>
+		</HashRouter>
 	);
 }
 
