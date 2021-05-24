@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { NavBar } from './common/components';
 import './App.css';
 import Home from './home/home';
@@ -7,6 +7,7 @@ import PopUp from './common/popups';
 import { Switch, Route, HashRouter } from 'react-router-dom';
 import About from './about/about';
 import Contact from './contact/contact';
+import NotFound from './pages/NotFound';
 
 function App() {
 
@@ -44,6 +45,9 @@ function App() {
 					<Route path='/contact' render={
 						() => <Contact />
 					} />
+					<Route>
+						<NotFound />
+					</Route>
 				</Switch>
 			</div>
 			</div>

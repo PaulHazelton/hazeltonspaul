@@ -54,3 +54,25 @@ export function ExtLink(props: ELProps) {
 		</a>
 	);
 }
+
+export function Spacer(props: {amount?: string}) {
+
+	return (
+		props.amount?
+		<div className='spacer' style={{height: props.amount}}></div> :
+		<div className='spacer' style={{height: '1rem'}}></div>
+	);
+
+	// if (props.rem) {
+	// 	console.log('rem = ' + props.rem);
+	// 	return (
+	// 		<div className='spacer' style={{height: props.rem + 'rem'}}></div>
+	// 	);
+	// }
+	// else {
+	// 	console.log('no rem given');
+	// 	return (
+	// 		<div className='spacer' style={{height: '1rem'}}></div>
+	// 	);
+	// }
+}

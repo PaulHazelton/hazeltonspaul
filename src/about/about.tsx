@@ -33,6 +33,8 @@ function About() {
 				<img src='images/construction.png' alt='construction' className='big-img' />
 			</div>
 		</div>
+		<br></br>
+		<br></br>
 		</>
 	);
 }

@@ -1,9 +1,9 @@
-import { ExtLink, Heading } from '../common/components';
+import { ExtLink, Heading, Spacer } from '../common/components';
 
 function Home() {
 	return (
 		<>
-			<div className='section' id='welcome-section'>
+			<div className='section'>
 				{/* <Heading text='What&apos;s up?'/> */}
 				<Welcome />
 			</div>
@@ -15,15 +15,20 @@ function Home() {
 				<Heading text='Other Places You Can Find Me' />
 				<ConnectList />
 			</div>
+			<Spacer amount='4rem' />
 		</>
 	);
 }
 
 function Welcome() {
 	return (
+		<>
+		<Spacer amount='2rem' />
 		<div id='welcome-box'>
 			What's up? My name is Paul Hazelton, I'm a web developer, programmer, and game designer!
 		</div>
+		<Spacer amount='30vh' />
+		</>
 	);
 }
 
@@ -96,7 +101,7 @@ function ProjectList() {
 						You can view the site in action on the development server at <ExtLink url='https://allthingsauctionable.ml'>allthingsauctionable.ml</ExtLink>
 					</p>
 					{/* <ExtLink url='https://allthingsauctionable.ml'> */}
-						<button className='button'><span>View Site</span></button>
+						<button className='ext-link-button'><span>View Site</span></button>
 					{/* </ExtLink> */}
 				</div>
 				<div className='project-img-box'>
