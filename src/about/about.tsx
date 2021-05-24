@@ -15,7 +15,7 @@ function About() {
 					<p>
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ducimus quis modi maxime doloremque ex consequatur fugiat esse tempore eos sequi, expedita velit excepturi, perspiciatis maiores vero totam voluptatibus. Laborum.
 					</p>
-					<h2>My Education</h2>
+					<h2>What Am I Passionate About?</h2>
 					<p>
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ducimus quis modi maxime doloremque ex consequatur fugiat esse tempore eos sequi, expedita velit excepturi, perspiciatis maiores vero totam voluptatibus. Laborum.
 					</p>
