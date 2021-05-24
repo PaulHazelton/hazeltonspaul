@@ -24,7 +24,7 @@ function Welcome() {
 		<>
 		<Spacer amount='2rem' />
 		<div id='welcome-box'>
-			What's up? 👋 My name is Paul Hazelton, and I'm a web developer, programmer, and game designer!
+			What's up? 👋 My name is Paul Hazelton and I'm a web developer, programmer, and game designer!
 		</div>
 		<Spacer amount='30vh' />
 		</>
