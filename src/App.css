@@ -334,6 +334,7 @@ nav {
 	position: relative;
 	color: var(--accent);
 	text-decoration: none;
+	white-space: nowrap;
 	cursor: pointer;
 }
 .ext-link::after {
@@ -360,14 +361,13 @@ nav {
 .ext-link-button {
 	font-size: 1rem;
 	font-weight: bold;
+	text-align: center;
 
 	border: 0;
 	cursor: pointer;
 
-	/* width: 11rem; */
 	width: 100%;
 	padding: 0.5em;
-	margin-top: 1rem;
 	float: left;
 
 	color: var(--bgcolor);
@@ -489,6 +489,7 @@ nav {
 	.project-info {
 		width: 100%;
 	}
+	.project-img-box {width: 100%}
 	
 	#connection-list {
 		flex-direction: row;
@@ -507,7 +508,7 @@ nav {
 	.project-info {
 		padding-right: 1rem;
 	}
-	/* .project-img-box {width: 50%;} */
+	.project-img-box {width: 40%;}
 
 	.connection:not(:last-child) {
 		margin-right: 2rem;

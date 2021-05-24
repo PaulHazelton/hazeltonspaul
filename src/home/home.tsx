@@ -4,7 +4,6 @@ function Home() {
 	return (
 		<>
 			<div className='section'>
-				{/* <Heading text='What&apos;s up?'/> */}
 				<Welcome />
 			</div>
 			<div className='section' id='project-section'>
@@ -100,9 +99,9 @@ function ProjectList() {
 
 						You can view the site in action on the development server at <ExtLink url='https://allthingsauctionable.ml'>allthingsauctionable.ml</ExtLink>
 					</p>
-					{/* <ExtLink url='https://allthingsauctionable.ml'> */}
-						<button className='ext-link-button'><span>View Site</span></button>
-					{/* </ExtLink> */}
+					<ExtLink url='https://allthingsauctionable.ml' className='ext-link-button'>
+						<span>View Site</span>
+					</ExtLink>
 				</div>
 				<div className='project-img-box'>
 					<img src='images/ata-screenshot.png' alt='TODO' />
