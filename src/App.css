@@ -55,17 +55,20 @@ hr {
 p {
 	margin-bottom: 1rem;
 }
-button {
+.button-box {
+	display: flex;
+	justify-content: center;
+}
+.neat-button {
 	font-size: 1rem;
 	font-weight: bold;
+	text-decoration: none;
 
 	cursor: pointer;
 
 	position: relative;
 	/* width: 100%; */
 	padding: 0.5em;
-	left: 50%;
-	transform: translateX(-50%);
 
 	color: var(--accent);
 	border: 2px solid var(--accent);
@@ -74,8 +77,8 @@ button {
 	transition: var(--time-2);
 	transition: var(--time-2);
 }
-button:hover,
-button:focus {
+.neat-button:hover,
+.neat-button:focus {
 	color: var(--bgcolor);
 	background-color: var(--accent);
 	transition: var(--time-2);

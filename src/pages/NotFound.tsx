@@ -17,7 +17,9 @@ function NotFound () {
 				Uh oh, there's nothing here.
 			</div>
 			<Spacer amount='4rem' />
-			<button onClick={goHome}>Go Back Home</button>
+			<div className='button-box'>
+				<button onClick={goHome} className='neat-button'>Go Back Home</button>
+			</div>
 		</div>
 	);
 }

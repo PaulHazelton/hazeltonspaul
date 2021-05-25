@@ -1,11 +1,14 @@
-import { Heading, ExtLink } from "../common/components";
+import { Heading, ExtLink, Spacer } from "../common/components";
 
 function Resume () {
 	return  (
 		<>
 			<div className='section' id='welcome-section'>
 				<Heading text='My Resume' />
-				<ExtLink url='https://raw.githubusercontent.com/PaulHazelton/hazeltonspaul/master/public/Paul-Hazelton-Resume.pdf'>Download from github</ExtLink>
+				<Spacer amount='2rem' />
+				<div className='button-box'>
+					<ExtLink url='https://raw.githubusercontent.com/PaulHazelton/hazeltonspaul/master/public/Paul-Hazelton-Resume.pdf' className='neat-button'>Download from github</ExtLink>
+				</div>
 			</div>
 			<div className='section'>
 				<div id='welcome-box'>
