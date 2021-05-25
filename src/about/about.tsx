@@ -1,4 +1,4 @@
-import { Heading, ExtLink } from '../common/components'
+import { Heading, ExtLink, Spacer } from '../common/components'
 
 function About() {
 	return (
@@ -40,8 +40,7 @@ function About() {
 				</p>
 			</div>
 		</div>
-		<br></br>
-		<br></br>
+		<Spacer amount='2rem' />
 		</>
 	);
 }

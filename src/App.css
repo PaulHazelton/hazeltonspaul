@@ -7,10 +7,6 @@
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
 }
-*:focus {
-	outline: none;
-	/* This is dangerous, but I'm doing custom styling for focused elements */
-}
 
 /* Variables */
 :root {
@@ -197,6 +193,13 @@ nav {
 	margin-right: 1px;
 }
 
+/* Footer */
+#footer {
+	width: 100%;
+	text-align: center;
+	margin: 1rem 0;
+}
+
 /* Center Pane. There's two for proper sizing, its a pain */
 #center-pane1 {
 	position: relative;
@@ -205,7 +208,7 @@ nav {
 
 	padding-left: 2rem;
 	padding-right: 2rem;
-	/* padding-bottom: 4rem; */
+	
 
 	width: 100%;
 }
@@ -221,6 +224,7 @@ nav {
 }
 #center-pane2 {
 	max-width: 75ch;
+	width: 100%;
 	padding-top: 0;
 }
 
@@ -422,6 +426,9 @@ nav {
 .large-box {
 	font-size: 3rem;
 	text-align: center;
+}
+#contact-box {
+	font-size: 1.5rem;
 }
 
 /* Connections like github and linkedin */

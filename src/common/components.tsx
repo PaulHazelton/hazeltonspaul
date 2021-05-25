@@ -19,12 +19,20 @@ export function NavBar() {
 			<Link to='/' id='logo-link'><img className='logo' src='./logo.svg' alt='logo' /></Link>
 			<nav>
 				<ul id='nav-link-list'>
+					<Link to='/' id='nav-list-item'>Home</Link>
 					<Link to='/about' id='nav-list-item'>About Me</Link>
-					<Link to='/contact' id='nav-list-item'>Contact Me</Link>
 					<li id='overflow-x-space'></li>
 				</ul>
 			</nav>
 		</header>
+	);
+}
+
+export function Footer() {
+	return (
+		<div id='footer'>
+			Email me at <a href='mailto: hazeltonspaul@gmail.com' className='ext-link'>hazeltonspaul@gmail.com</a>
+		</div>
 	);
 }
 
@@ -62,17 +70,4 @@ export function Spacer(props: {amount?: string}) {
 		<div className='spacer' style={{height: props.amount}}></div> :
 		<div className='spacer' style={{height: '1rem'}}></div>
 	);
-
-	// if (props.rem) {
-	// 	console.log('rem = ' + props.rem);
-	// 	return (
-	// 		<div className='spacer' style={{height: props.rem + 'rem'}}></div>
-	// 	);
-	// }
-	// else {
-	// 	console.log('no rem given');
-	// 	return (
-	// 		<div className='spacer' style={{height: '1rem'}}></div>
-	// 	);
-	// }
 }

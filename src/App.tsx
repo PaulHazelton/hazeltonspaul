@@ -1,12 +1,11 @@
 import { useState } from 'react';
-import { NavBar } from './common/components';
+import { NavBar, Footer } from './common/components';
 import './App.css';
 import Home from './home/home';
 import { PopData } from './common/interfaces';
 import PopUp from './common/popups';
 import { Switch, Route, HashRouter } from 'react-router-dom';
 import About from './about/about';
-import Contact from './contact/contact';
 import NotFound from './pages/NotFound';
 
 function App() {
@@ -42,15 +41,13 @@ function App() {
 					<Route path='/about' render={
 						() => <About />
 					} />
-					<Route path='/contact' render={
-						() => <Contact />
-					} />
 					<Route>
 						<NotFound />
 					</Route>
 				</Switch>
 			</div>
 			</div>
+			<Footer />
 			{
 				// Show popup if showPopUp is true, nothing otherwise
 				showPopUp ? <PopUp setShowPopUp={setShowPopUp} data={popData} /> : null
