@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavBar, Footer, Spacer } from './common/components';
+import { NavBar, Footer } from './common/components';
 import './App.css';
 import Home from './pages/home';
 import { PopData } from './common/interfaces';
