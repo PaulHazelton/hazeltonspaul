@@ -197,9 +197,9 @@ nav {
 #footer {
 	width: 100%;
 	text-align: center;
-	margin: 1rem 0;
+	margin-top: 1rem;
+	padding: 1rem;
 }
-
 /* Center Pane. There's two for proper sizing, its a pain */
 #center-pane1 {
 	position: relative;
@@ -209,8 +209,8 @@ nav {
 	padding-left: 2rem;
 	padding-right: 2rem;
 	
-
 	width: 100%;
+	height: 100vh;
 }
 @media (min-width: 800px) {
 	#center-pane1 {
@@ -226,6 +226,9 @@ nav {
 	max-width: 75ch;
 	width: 100%;
 	padding-top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 /* Popup stuff */
