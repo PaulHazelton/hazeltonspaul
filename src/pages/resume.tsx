@@ -4,7 +4,7 @@ function Resume () {
 	return  (
 		<>
 			<div className='section' id='welcome-section'>
-				<Heading text='My Resume' />
+				<Heading text='My Résumé' />
 				<Spacer amount='2rem' />
 				<div className='button-box'>
 					<ExtLink url='https://raw.githubusercontent.com/PaulHazelton/hazeltonspaul/master/public/Paul-Hazelton-Resume.pdf' className='neat-button'>Download from github</ExtLink>
