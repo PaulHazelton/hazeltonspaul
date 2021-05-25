@@ -6,6 +6,7 @@ import { PopData } from './common/interfaces';
 import PopUp from './common/popups';
 import { Switch, Route, HashRouter } from 'react-router-dom';
 import About from './pages/about';
+import Resume from './pages/resume';
 import NotFound from './pages/NotFound';
 
 function App() {
@@ -40,6 +41,9 @@ function App() {
 					} />
 					<Route path='/about' render={
 						() => <About />
+					} />
+					<Route path='/resume' render={
+						() => <Resume />
 					} />
 					<Route>
 						<NotFound />
