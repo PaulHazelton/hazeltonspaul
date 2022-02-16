@@ -8,6 +8,8 @@ import { Switch, Route, HashRouter } from 'react-router-dom';
 import About from './pages/about';
 import Resume from './pages/resume';
 import NotFound from './pages/NotFound';
+import DevLogs from './pages/DevLogs';
+import DevLogsRecoil from './pages/DevLogsRecoil';
 
 function App() {
 
@@ -44,6 +46,12 @@ function App() {
 					} />
 					<Route path='/resume' render={
 						() => <Resume />
+					} />
+					<Route exact path='/devlogs' render={
+						() => <DevLogs />
+					} />
+					<Route exact path='/devlogs/recoil' render={
+						() => <DevLogsRecoil />
 					} />
 					<Route>
 						<NotFound />

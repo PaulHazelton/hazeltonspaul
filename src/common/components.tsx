@@ -21,7 +21,8 @@ export function NavBar() {
 				<ul id='nav-link-list'>
 					<Link to='/' id='nav-list-item'>Home</Link>
 					<Link to='/about' id='nav-list-item'>About Me</Link>
-					<Link to='/resume' id='nav-list-item'>Résumé</Link>
+					<Link to='/devlogs' id='nav-list-item'>Dev Logs</Link>
+					{/* <Link to='/resume' id='nav-list-item'>Résumé</Link> */}
 					<li id='overflow-x-space'></li>
 				</ul>
 			</nav>

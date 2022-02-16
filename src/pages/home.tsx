@@ -26,7 +26,7 @@ function Welcome() {
 		<div id='welcome-box'>
 			What's up? 👋 My name is Paul Hazelton and I'm a web developer, programmer, and game designer!
 		</div>
-		<Spacer amount='30vh' />
+		{/* <Spacer amount='30vh' /> */}
 		</>
 	);
 }
@@ -79,6 +79,18 @@ function Connection(props: ConnectionProps) {
 function ProjectList() {
 	return (
 		<>
+			<div className='info-box' id='project-box'>
+				<div className='project-info'>
+					<h2><a href='/#/devlogs/recoil' className="ext-link">Recoil</a></h2>
+					<p>
+						Recoil is a 2D platformer where your character can move only by the recoil of their gun.
+					</p>
+					<a className='ext-link-button' href='/#/devlogs/recoil'><span>Dev Logs</span></a>
+				</div>
+				<div className='project-img-box'>
+					<img src='images/Recoil-1.png' alt='Ship on black background shooting' />
+				</div>
+			</div>
 			<div className='info-box' id='project-box'>
 				<div className='project-info'>
 					<h2>This Site!</h2>
