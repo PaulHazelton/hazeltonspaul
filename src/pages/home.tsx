@@ -86,8 +86,8 @@ function ProjectList() {
 						Recoil is a 2D platformer where your character can move only by the recoil of their gun.
 					</p>
 					<a className='ext-link-button' href='/#/devlogs/recoil'><span>Dev Logs</span></a>
-					<a className='ext-link-button' href='/Revoil-Alpha.zip' style={{marginTop: '1rem'}}><span>Download For Windows</span></a>
-					<a className='ext-link-button' href='/Revoil-Linux-Alpha.zip' style={{marginTop: '1rem'}}><span>Download For Linux</span></a>
+					<a className='ext-link-button' href='/Recoil-Alpha.zip' style={{marginTop: '1rem'}}><span>Download For Windows</span></a>
+					<a className='ext-link-button' href='/Recoil-Linux-Alpha.zip' style={{marginTop: '1rem'}}><span>Download For Linux</span></a>
 				</div>
 				<div className='project-img-box'>
 					<img src='images/Recoil-2.png' alt='Tank on black background shooting in 2 directions' />
