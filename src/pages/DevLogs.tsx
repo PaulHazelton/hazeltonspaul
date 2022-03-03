@@ -13,7 +13,7 @@ function DevLogs() {
 						</p>
 					</div>
 					<div className='project-img-box'>
-						<img src='images/Recoil-1.png' alt='Hammer and wrench' />
+						<img src='images/Recoil-2.png' alt='Hammer and wrench' />
 					</div>
 				</div>
 			</div>
