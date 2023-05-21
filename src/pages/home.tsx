@@ -106,15 +106,17 @@ function ProjectList() {
 				<div className='project-info'>
 					<h2>This Site!</h2>
 					<p>
-						This site is currently under construction!<br></br>
-						This very site is a TypeScript React app. I really like working with React, so I decided to make my portfolio with it.
+						This site is a TypeScript React app.<br />
+						When I made this site, React was the only web framework I knew, so I decided to make my portfolio with it.
+						Since then I've now learned Blazor, and I strongly prefer Blazor over React, so eventually I will be moving this website over to Blazor.
 					</p>
 				</div>
 				<div className='project-img-box'>
-					<img src='images/construction.png' alt='TODO' />
+					<img src='images/BlazorLogo.png' alt='Blazor Logo. Purple blob with @ symbol.' />
 				</div>
 			</div>
-			<div className='info-box' id='project-box'>
+			
+			{/* <div className='info-box' id='project-box'>
 				<div className='project-info'>
 					<h2>All Things Auctionable</h2>
 					<p>
@@ -129,7 +131,7 @@ function ProjectList() {
 				<div className='project-img-box'>
 					<img src='images/ata-screenshot.png' alt='TODO' />
 				</div>
-			</div>
+			</div> */}
 		</>
 	);
 }
