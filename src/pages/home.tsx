@@ -104,6 +104,24 @@ function ProjectList() {
 			</div>
 			<div className='info-box' id='project-box'>
 				<div className='project-info'>
+					<h2>Responsive GUI for MonoGame</h2>
+					<p>
+						<ExtLink url='https://www.monogame.net/'>MonoGame</ExtLink> is the framework I use to make games. I decided I wanted to use an html/css style of creating menus for my games, so I made this!
+						It allows for (arguably) most css style functionality including flexbox, gap, padding, margin, colors, borders, word wrap, scrolling, transitions and animations.
+						Some Non-css functionality is also included like nine-slice.
+						It works with both mouse input and gamepad input, you can use the arrow keys to change focus and scroll automatically without setting up anything like tab-index.
+					</p>
+					<ExtLink url='https://github.com/PaulHazelton/MG.ResponsiveGUI' className='ext-link-button'>
+						<span>View On GitHub</span>
+					</ExtLink>
+				</div>
+				<div className='project-img-box'>
+					<img src='images/ResponsiveGui.png' alt='Simple menu screen with 6 buttons.' />
+				</div>
+			</div>
+
+			<div className='info-box' id='project-box'>
+				<div className='project-info'>
 					<h2>This Site!</h2>
 					<p>
 						This site is a TypeScript React app.<br />
